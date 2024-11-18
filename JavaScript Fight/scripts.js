@@ -66,3 +66,5 @@ function animate(){
   console.log("go")
 }
 animate()
+
+window.addEventListener('keydown', (Event))
