@@ -1,0 +1,43 @@
+/* Style for the body and layout */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+/* Style for the canvas element */
+canvas {
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth rotation and fade effect */
+  width: 90%; /* Scale canvas width slightly larger */
+  max-height: 90%; /* Adjust max height to match new scaling */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation class for canvas (rotate and fade) */
+.canvas-animate {
+  transform: rotateY(90deg); /* Rotates horizontally */
+  opacity: 0; /* Fades out */
+}
+
+/* Navigation arrows */
+.navigation {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #333;
+  padding: 0 20px;
+  user-select: none;
+}
